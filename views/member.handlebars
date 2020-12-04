@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/logout">
+        Logout
+      </a>
+    </div>
+  </div>
+</nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2>Welcome <span class="member-name"></span></h2>
+        <div class="container">
+          <div class="row">
+              <div class="col-small-4">
+                  <div class="card p-3" style="width:18rem;">
+                      <img src="{{user.image}}" class="card-img-top">                
+                      <div class="card-body">
+                        <h5 class="card-title">{{user.username}}</h5> 
+                      </div>
+                  </div>
+              </div>
+              <div class="col-small-4">
+                  <h1>Profile</h1>
+                  <p>Firstname: <span class="red">{{user.firstname}}</span></p>
+                  <p>Lastname: <span class="red">{{user.lastname}}</span></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
